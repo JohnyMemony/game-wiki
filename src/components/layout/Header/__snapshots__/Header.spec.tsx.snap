@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render Header component 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="header__content"
+    >
+      <Link
+        to="/"
+      >
+        <img
+          alt=""
+          className="header__logo"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+        />
+      </Link>
+    </div>
+  </div>
+</header>
+`;
