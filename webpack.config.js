@@ -3,6 +3,7 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const config = {
   entry: [
@@ -79,7 +80,8 @@ const config = {
       patterns: [{from: 'src/index.html'}],
     }),
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin(),
+    new Dotenv()
   ],
   resolve: {
     extensions: [

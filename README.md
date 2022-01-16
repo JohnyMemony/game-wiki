@@ -2,7 +2,7 @@
 
 The app contains games information
 
-Built with https://www.giantbomb.com/api
+Built with https://api.rawg.io
 
 ## Building and running on localhost
 

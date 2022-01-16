@@ -1,10 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import gamesReducer from './games-store';
 
+export const rootReducer = combineReducers({
+  games: gamesReducer,
+});
+
 export const store = configureStore({
-  reducer: {
-    games: gamesReducer,
-  },
+  reducer: rootReducer,
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import type { RootState } from './index';
+import { Game } from '../models/games/Game';
 
 interface GamesState {
-  gamesList: any[];
+  gamesList: Game[];
 }
 
 // Define the initial state using that type
@@ -10,17 +10,20 @@ const initialState: GamesState = {
   gamesList: [],
 }
 
+// const actionSetGamesList =
+
 export const gamesSlice = createSlice({
   name: 'games',
   initialState,
   reducers: {
-    // increment: (state) => {
-    //   state.value += 1
-    // },
+    setGamesList: (state, action: PayloadAction<Game[]>) => {
+      debugger;
+      state.gamesList = action.payload;
+    }
   },
 })
 
-export const {  } = gamesSlice.actions
+export const { setGamesList } = gamesSlice.actions
 
 // Other code such as selectors can use the imported `RootState` type
 // export const selectCount = (state: RootState) => state.counter.value
