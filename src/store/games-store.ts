@@ -17,7 +17,6 @@ export const gamesSlice = createSlice({
   initialState,
   reducers: {
     setGamesList: (state, action: PayloadAction<Game[]>) => {
-      debugger;
       state.gamesList = action.payload;
     }
   },
