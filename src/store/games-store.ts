@@ -1,22 +1,21 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { Game } from '../models/games/Game';
+import { PaginatedList } from '../types/api';
 
 interface GamesState {
-  gamesList: Game[];
+  gamesList: PaginatedList<Game>;
 }
 
 // Define the initial state using that type
 const initialState: GamesState = {
-  gamesList: [],
+  gamesList: { page: 1, total: 0, items: [] },
 }
-
-// const actionSetGamesList =
 
 export const gamesSlice = createSlice({
   name: 'games',
   initialState,
   reducers: {
-    setGamesList: (state, action: PayloadAction<Game[]>) => {
+    setGamesList: (state, action: PayloadAction<PaginatedList<Game>>) => {
       state.gamesList = action.payload;
     }
   },

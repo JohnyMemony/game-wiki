@@ -1,4 +1,11 @@
 .games-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: flex-end;
+  }
 }

@@ -13,7 +13,7 @@ export const GameCard: React.FC<Props> = (props) => {
   const { name, background_image, genres } = data;
 
   const renderGenres = () => {
-    return genres.map((item) => <Tag text={item.name} color="purple" />);
+    return genres.map((item, index) => <Tag key={index} text={item.name} color="purple" />);
   };
 
   return (
