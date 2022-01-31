@@ -20,7 +20,7 @@ export const HomePage: React.FC = () => {
 
   return (
     <div>
-      {isLoading
+      {!isLoading
         ? <Loader centered />
         : (
           <GamesList

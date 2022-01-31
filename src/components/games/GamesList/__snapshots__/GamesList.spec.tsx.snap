@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GamesList component should render GamesList component 1`] = `
+<div
+  className="games-list"
+>
+  <div
+    className="games-list__items"
+  />
+  <div
+    className="games-list__pagination"
+  >
+    <Pagination
+      onChange={[Function]}
+      page={1}
+      total={10}
+    />
+  </div>
+</div>
+`;

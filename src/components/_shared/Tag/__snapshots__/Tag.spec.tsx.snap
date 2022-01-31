@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag component should render Tag component 1`] = `
+<Memo(ForwardRef(Badge))
+  className="tag"
+>
+  Tag text
+</Memo(ForwardRef(Badge))>
+`;

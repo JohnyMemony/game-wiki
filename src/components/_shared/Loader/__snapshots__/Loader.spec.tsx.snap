@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader component should render Loader component 1`] = `
+<Memo(ForwardRef(Pane))>
+  <Memo(ForwardRef(Spinner))
+    className="loader"
+    marginX={0}
+    marginY={0}
+  />
+</Memo(ForwardRef(Pane))>
+`;
+
+exports[`Loader component should render centered Loader component 1`] = `
+<Memo(ForwardRef(Pane))>
+  <Memo(ForwardRef(Spinner))
+    className="loader"
+    marginX="auto"
+    marginY={120}
+  />
+</Memo(ForwardRef(Pane))>
+`;

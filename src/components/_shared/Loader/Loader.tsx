@@ -12,7 +12,7 @@ export const Loader: React.FC<Props> = (props) => {
 
   return (
     <Pane>
-      <Spinner marginX={marginX} marginY={marginY} />
+      <Spinner className="loader" marginX={marginX} marginY={marginY} />
     </Pane>
   );
 };

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination component should render Pagination component 1`] = `
+<Memo(ForwardRef(Pagination))
+  onPageChange={[Function]}
+  page={1}
+  totalPages={10}
+/>
+`;
